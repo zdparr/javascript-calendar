@@ -20,10 +20,12 @@ $("#currentDay").text(currentDay);
 
 // Create row for each hour of the day
 for (i = 0; i < workHours.length; i++) {
+  // Creating DOM elements for each work hour
   let row = $("<div class='row'>");
   let timeHour = $("<div class='hour col-1'>").text(workHours[i]);
   let timeBlock = $("<textarea class='time-block col-10'>").attr("id", i);
 
+  // Determine and assign prosper classes for past, present or future
   if (currentHour === militaryHours[i]) {
     timeBlock.addClass("present");
   } else if (currentHour > militaryHours[i]) {
@@ -38,6 +40,7 @@ for (i = 0; i < workHours.length; i++) {
 
   row.append(row, timeHour, timeBlock, saveBtn);
 
+  // Write elements to page
   $(".container").append(row);
 }
 
