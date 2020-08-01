@@ -10,8 +10,9 @@ const workHours = [
   "3 PM",
   "4 PM",
   "5 PM",
+  "6 PM",
 ];
-const militaryHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+const militaryHours = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 const currentHour = moment().hour();
 
 // Update header with formatted current day
