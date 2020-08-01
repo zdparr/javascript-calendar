@@ -36,7 +36,7 @@ for (i = 0; i < workHours.length; i++) {
     .attr("data-id", i)
     .append(savBtnIcon);
 
-  row.append(timeHour, timeBlock, saveBtn);
+  row.append(row, timeHour, timeBlock, saveBtn);
 
   $(".container").append(row);
 }
